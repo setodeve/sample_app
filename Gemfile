@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails',      '>=6.0.3'
+gem 'rails',      '6.0.3'
 gem 'bcrypt',     '3.1.13'
 gem 'faker',      '2.20.0'
 gem 'will_paginate',           '3.3.1'
@@ -14,6 +14,7 @@ gem 'turbolinks', '5.2.0'
 gem 'jbuilder',   '2.9.1'
 gem 'bootsnap',   '>=1.4.6', require: false
 gem 'psych', '~> 3.1'
+gem 'rexml', '~> 3.2', '>= 3.2.4'
 
 group :development, :test do
   gem 'sqlite3', '>=1.4.1'
@@ -28,7 +29,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara',                 '>=3.28.0'
+  gem 'capybara',                 '~>3.28.0'
   gem 'selenium-webdriver',       '>=3.142.4'
   gem 'webdrivers',               '4.1.2'
   gem 'rails-controller-testing', '1.0.4'
